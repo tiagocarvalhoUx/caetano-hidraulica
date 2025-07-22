@@ -1,42 +1,43 @@
-// components/Trust/Trust.jsx
 import React from 'react';
 import { CheckCircle, Clock, User, Shield } from 'lucide-react';
 
 const Trust = () => {
   const trustFeatures = [
     {
-      icon: <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />,
+      icon: <CheckCircle className="w-12 h-12 md:w-16 md:h-16 text-blue-900 mx-auto mb-4" />,
       title: "Identidade Checada"
     },
     {
-      icon: <Clock className="w-16 h-16 text-green-600 mx-auto mb-4" />,
+      icon: <Clock className="w-12 h-12 md:w-16 md:h-16 text-blue-900 mx-auto mb-4" />,
       title: "Histórico Verificado"
     },
     {
-      icon: <User className="w-16 h-16 text-green-600 mx-auto mb-4" />,
+      icon: <User className="w-12 h-12 md:w-16 md:h-16 text-blue-900 text- mx-auto mb-4" />,
       title: "Entrevistas Presenciais"
     },
     {
-      icon: <Shield className="w-16 h-16 text-green-600 mx-auto mb-4" />,
+      icon: <Shield className="w-12 h-12 md:w-16 md:h-16 text-blue-900 mx-auto mb-4" />,
       title: "Treinamento"
     }
   ];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">Investimos em segurança e confiança</h2>
-        <p className="text-gray-600 mb-12 max-w-3xl mx-auto text-lg">
-          A Doutor Resolve se preocupa com você e por isso todos nossos franqueados possuem Selo Reclame Aqui, são totalmente treinados e certificados.
-        </p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-          {trustFeatures.map((feature, index) => (
-            <div key={index} className="text-center">
-              {feature.icon}
-              <h3 className="font-bold text-gray-800 mb-2">{feature.title}</h3>
-            </div>
-          ))}
+    <section className="w-full">
+      
+
+      {/* Features Section */}
+      <div className="w-full py-12 px-4 md:px-8 lg:px-16 xl:px-0 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {trustFeatures.map((feature, index) => (
+              <div key={index} className="text-center bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                {feature.icon}
+                <h3 className="text-gray-800 text-base md:text-lg font-medium">
+                  {feature.title}
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

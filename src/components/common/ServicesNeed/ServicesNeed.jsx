@@ -5,6 +5,8 @@ import Check1 from "../../../assets/images/Banner/check-escuro.svg";
 
 export default function ServiceSection() {
   return (
+    
+    
     <div className="w-full min-h-screen pt-[49px] pb-10 bg-gradient-to-r from-[#0e3e61] to-[#5db0ce] flex flex-col justify-start items-center overflow-hidden">
       <div className="w-full max-w-[1170px] px-4 md:px-[15px] flex flex-col justify-start items-center gap-[29.99px]">
         <div className="w-full pl-[4.59px] pr-[0.59px] pb-5 flex justify-start items-start">
@@ -37,7 +39,8 @@ export default function ServiceSection() {
                       <div className="self-stretch text-center justify-center text-[#090033] text-sm font-bold font-['Inter'] uppercase leading-none">
                         Orçamento
                         <br />
-                        Elétrica
+                        <br />
+                        Caça vazamento
                       </div>
                     </div>
                     <div className="self-stretch flex flex-col justify-start items-start">
@@ -106,6 +109,7 @@ export default function ServiceSection() {
                     <div className="self-stretch flex flex-col justify-start items-center">
                       <div className="self-stretch text-center justify-center text-[#2ab6c5] text-sm font-bold font-['Inter'] uppercase leading-none">
                         Orçamento
+                        <br />
                         <br />
                         Hidráulica
                       </div>
