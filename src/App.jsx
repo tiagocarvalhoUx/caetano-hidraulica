@@ -1,15 +1,31 @@
-import './App.css'
+import "./App.css";
+import Footer from "./components/common/Footer";
 
-import Header from './components/common/Header/Header'
+import Header from "./components/common/Header/Header";
+import HowItWorks from "./components/common/Carrossel";
+import ServicesNeed from "./components/common/ServicesNeed/ServicesNeed";
+
+import Services from "./components/common/Services";
+import Testimonials from "./components/common/Testimonials";
+import Trust from "./components/common/Trust";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
-      
+
+      <HowItWorks />
+      <ServicesNeed />
+      <Services />
+
+      <Services />
+      <Testimonials />
+      <Trust />
+      <Footer />
+
       {/* Add your page content here */}
-    </div>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;
