@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 export const DesktopNavigation = ({ items }) => {
   return (
-    <nav className="hidden md:flex space-x-8 text-sm font-semibold">
+    <nav className="hidden md:flex space-x-8 text-sm font-semibold font-[Inter]">
       {items.map((item) => (
         <a 
           key={item.id}

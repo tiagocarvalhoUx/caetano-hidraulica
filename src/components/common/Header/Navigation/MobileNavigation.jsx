@@ -8,7 +8,7 @@ import WhatsappIcon from '../../../../assets/images/Banner/icon-whats.png';
 
   return (
     <div className="md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-[#0d3350] to-[#1d74b6] z-40 shadow-lg">
-      <nav className="flex flex-col p-4 space-y-4">
+      <nav className="flex flex-col p-4 space-y-4 font-[Inter]">
         {items.map((item) => (
           <a 
             key={item.id}

@@ -9,6 +9,8 @@ import Services from "./components/common/Services";
 import Testimonials from "./components/common/Testimonials";
 import Trust from "./components/common/Trust";
 import SessionNever from "./components/common/Session-Never/SessionNever";
+import Action from "./components/common/Action/Action";
+import Differences from "./components/common/Differences/Differences";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <HowItWorks />
       <ServicesNeed />
       <SessionNever />
+      <Differences />
+      <Action />
       <Services />
       <Testimonials />
       <Trust />
