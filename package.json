@@ -5,12 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": " npm run dev && vite build",
+    "build": "vite build",
     "lint": "next eslint .",
     "preview": "vite preview",
-    
     "vercel-install": "npm install",
-    "start": "next start"
+    "start": "vite"
   },
   "dependencies": {
     "lucide-react": "^0.525.0",
