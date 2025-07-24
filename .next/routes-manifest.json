@@ -19,7 +19,20 @@
     "fallback": []
   },
   "dynamicRoutes": [],
-  "staticRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/layout",
+      "regex": "^/layout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/layout(?:/)?$"
+    },
+    {
+      "page": "/page",
+      "regex": "^/page(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/page(?:/)?$"
+    }
+  ],
   "dataRoutes": [],
   "rsc": {
     "header": "RSC",
