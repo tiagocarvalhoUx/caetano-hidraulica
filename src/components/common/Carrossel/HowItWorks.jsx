@@ -1,19 +1,19 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Foto1 from '../../../assets/images/Fotos/foto1.png';
-import Foto2 from '../../../assets/images/Fotos/foto2.png';
-import Foto3 from '../../../assets/images/Fotos/foto3.png';
-import Foto4 from '../../../assets/images/Fotos/foto4.png';
-import Foto5 from '../../../assets/images/Fotos/foto5.png';
-import Foto6 from '../../../assets/images/Fotos/foto6.png';
-import Foto7 from '../../../assets/images/Fotos/foto7.png';
-import Foto8 from '../../../assets/images/Fotos/foto8.png';
-import Foto9 from '../../../assets/images/Fotos/foto9.png';
+import _Foto1 from '../../../assets/images/Fotos/foto-1.png';
+import _Foto2 from '../../../assets/images/Fotos/foto-2.png';
+import _Foto3 from '../../../assets/images/Fotos/foto-3.png';
+import _Foto4 from '../../../assets/images/Fotos/foto-4.png';
+import _Foto5 from '../../../assets/images/Fotos/foto-5.png';
+import _Foto6 from '../../../assets/images/Fotos/foto-6.png';
+import _Foto7 from '../../../assets/images/Fotos/foto-7.png';
+import _Foto8 from '../../../assets/images/Fotos/foto-8.png';
+import _Foto9 from '../../../assets/images/Fotos/foto-9.png';
 
-export default function ResponsiveCarousel({ foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9 }) {
+export default function ResponsiveCarousel() {
   // Array com as imagens do carrossel
    const carouselImages = [
-    Foto1, Foto2, Foto3, Foto4, Foto5, Foto6, Foto7, Foto8, Foto9
+    _Foto1, _Foto2, _Foto3, _Foto4, _Foto5, _Foto6, _Foto7, _Foto8, _Foto9
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

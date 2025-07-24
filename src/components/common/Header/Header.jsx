@@ -1,5 +1,5 @@
 // components/Header/Header.jsx
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Youtube, Instagram, X, ArrowUp } from 'lucide-react';
 import Logo from "../../../assets/images/Logos/caetano-logo.png";
 import Whatsapp from "../../../assets/images/Banner/icon-whats.png";

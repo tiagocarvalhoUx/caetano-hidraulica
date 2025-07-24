@@ -37,7 +37,7 @@ const Testimonials = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                   <p className="text-center text-white text-sm md:text-base xl:text-lg 2xl:text-xl font-medium font-['Lato'] leading-tight">
-                    Renata Figueiroa, Lojas TIM
+                    Renata Figueiroa, Centro
                   </p>
                 </div>
               </div>
@@ -61,7 +61,7 @@ const Testimonials = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                   <p className="text-center text-white text-sm md:text-base xl:text-lg 2xl:text-xl font-medium font-['Lato'] leading-tight">
-                    Mariana Novaes, Bairro Belvedere
+                    Mariana Novaes, Bairro Concórdia
                   </p>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Testimonials = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                   <p className="text-center text-white text-sm md:text-base xl:text-lg 2xl:text-xl font-medium font-['Lato'] leading-tight">
-                    João Marques, Bairro Redentora
+                    João Marques, Bairro Vila Carvalho
                   </p>
                 </div>
               </div>
