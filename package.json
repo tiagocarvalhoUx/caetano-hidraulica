@@ -8,7 +8,7 @@
     "build": " npm run dev && vite build",
     "lint": "next eslint .",
     "preview": "vite preview",
-    "vercel-build": "npm run build",
+    
     "vercel-install": "npm install",
     "start": "next start"
   },

@@ -1,19 +1,18 @@
- { "rewrites": [{ "source": "/(.*)", "destination": "/" }], "buildCommand": "npm run vercel-build",
-  "installCommand": "npm run vercel-install", "framework": "nextjs","outputDirectory": ".next" ,
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "buildCommand": "npm run vercel-build",
+  "installCommand": "npm run vercel-install",
+  "framework": "vite",
+  "outputDirectory": ".vite",
 
- 
+  
   "functions": {
-    "app/api/**/*.js": {
-      "maxDuration": 60
+    "app/api/*.jsx": {
+      "runtime": "nodejs18.x"
     }
-  },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node",
-      "config": {
-        "maxLambdaSize": "50mb"
-      }
-    }
-  ]
+  
 }
+}
+
+  
+
