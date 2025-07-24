@@ -97,7 +97,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\Casa-PC\\OneDrive\\Documentos\\Projects\\Caetano-hidraulica",
+    "outputFileTracingRoot": "C:\\Users\\Casa-PC\\OneDrive\\Documentos\\Projects\\Caetano-Hidraulica",
     "experimental": {
       "useSkewCookie": false,
       "nodeMiddleware": false,
@@ -288,10 +288,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
-      "root": "C:\\Users\\Casa-PC\\OneDrive\\Documentos\\Projects\\Caetano-hidraulica"
+      "root": "C:\\Users\\Casa-PC\\OneDrive\\Documentos\\Projects\\Caetano-Hidraulica"
     }
   },
-  "appDir": "C:\\Users\\Casa-PC\\OneDrive\\Documentos\\Projects\\Caetano-hidraulica",
+  "appDir": "C:\\Users\\Casa-PC\\OneDrive\\Documentos\\Projects\\Caetano-Hidraulica",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",
