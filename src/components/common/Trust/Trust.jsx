@@ -1,67 +1,116 @@
-import React from 'react';
-import { CheckCircle, Clock, User, Shield } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import Component1 from "../../../assets/images/Banner/Component1.png";
+import Component2 from "../../../assets/images/Banner/Component2.png";
+import Component3 from "../../../assets/images/Banner/Component3.png";
+import Component4 from "../../../assets/images/Banner/Component4.png";
 
 const Trust = () => {
-  const trustFeatures = [
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const trustItems = [
     {
-      icon: <CheckCircle className="w-12 h-12 md:w-16 md:h-16 text-blue-900 mx-auto mb-4" />,
-      title: "Identidade Checada"
+      image: Component1,
+      title: "Identidade Checada",
+      delay: 0,
+      variant: "21",
+      dimensions: "w-[41.16px] h-12",
+      imageDimensions: "w-[41.14px] h-[41.14px]",
+      imagePosition: "left-[0.01px] top-[3.43px]"
     },
     {
-      icon: <Clock className="w-12 h-12 md:w-16 md:h-16 text-blue-900 mx-auto mb-4" />,
-      title: "Histórico Verificado"
+      image: Component2,
+      title: "Histórico Verificado",
+      delay: 200,
+      variant: "22",
+      dimensions: "w-[41.16px] h-12",
+      imageDimensions: "w-[41.14px] h-12",
+      imagePosition: "left-[0.01px] top-0"
     },
     {
-      icon: <User className="w-12 h-12 md:w-16 md:h-16 text-blue-900 mx-auto mb-4" />,
-      title: "Profissionais Qualificados"
+      image: Component3,
+      title: "Problemas Resolvidos",
+      delay: 400,
+      variant: "23",
+      dimensions: "w-12 h-12",
+      imageDimensions: "w-[46.29px] h-[41.14px]",
+      imagePosition: "left-[1.71px] top-[3.43px]"
     },
     {
-      icon: <Shield className="w-12 h-12 md:w-16 md:h-16 text-blue-900 mx-auto mb-4" />,
-      title: "Confiança Garantida"
+      image: Component4,
+      title: "Profissionais Qualificados",
+      delay: 600,
+      variant: "24",
+      dimensions: "w-12 h-12",
+      imageDimensions: "w-[46.29px] h-[41.14px]",
+      imagePosition: "left-[1.71px] top-[3.43px]"
     }
   ];
 
   return (
     <section className="w-full">
-      {/* Features Section */}
-      <div className="w-full py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 xl:px-0 bg-gray-50">
-        <div className="w-full max-w-[1170px] mx-auto flex flex-col justify-center items-center">
-          {/* Header Section */}
-          <div className="w-full px-4 md:px-6 lg:px-4 pt-4 md:pt-6 lg:pt-8 pb-8 md:pb-10 lg:pb-12 flex flex-col justify-center items-center text-center">
-            <div className="w-full pb-2 md:pb-3 flex flex-col justify-center items-center">
-              <h2 className="text-center text-[#0c2c44] text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold font-['Inter'] leading-tight md:leading-10 mb-4 md:mb-6">
+
+      <div className="desktop-container w-full max-w-[1920px] mx-auto py-[41px] border-t border-b border-[#e7e7e7] flex flex-col justify-start items-center px-4 md:px-0">
+        <div className="w-full max-w-[1170px] flex flex-col justify-start items-start gap-[0px]">
+          <div className={`self-stretch min-h-px px-[15px] pt-[19px] pb-2.5 flex flex-col justify-start items-start gap-2.5 
+            ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'} 
+            transition-all duration-[800ms] ease-out`}>
+            <div className="self-stretch pb-[0.59px] flex flex-col justify-start items-center">
+              <div className="self-stretch text-center justify-center text-[#0c2c44] text-2xl md:text-3xl lg:text-4xl font-bold font-['Inter'] leading-8 md:leading-9 lg:leading-10">
                 Investimos em segurança e confiança
-              </h2>
+              </div>
             </div>
-            <div className="w-full flex flex-col justify-center items-center">
-              <p className="text-center max-w-4xl mx-auto">
-                <span className="text-[#090033] text-sm md:text-base lg:text-base font-bold font-['Inter'] leading-relaxed">
+              <br />
+            <div className="self-stretch flex flex-col justify-start items-center">
+              <div className="self-stretch text-center justify-center">
+                <span className="text-[#090033] text-base font-semibold font-['Inter'] leading-tight">
                   Caetano Hidráulica Caça Vazamento
                 </span>
-                <span className="text-[#090033] text-sm md:text-base lg:text-base font-normal font-['Inter'] leading-relaxed">
+              
+                <span className="text-[#090033] text-base font-semibold font-['Inter'] leading-tight">
                   {" "}se preocupa com quem vai até o seu imóvel prestar serviços. Nossos profissionais são todos qualificados e selecionados.
                 </span>
-              </p>
+              </div>
             </div>
           </div>
-          
-          {/* Features Grid */}
-          <div className="w-full max-w-7xl mx-auto px-4 md:px-0">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-6 xl:gap-8">
-              {trustFeatures.map((feature, index) => (
-                <div 
-                  key={index} 
-                  className="text-center bg-white p-6 md:p-8 lg:p-6 xl:p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-center items-center"
-                >
-                  <div className="flex justify-center items-center mb-4">
-                    {feature.icon}
+            <br />
+          <div className="self-stretch flex flex-col lg:flex-row justify-start items-start gap-4 lg:gap-0">
+            {trustItems.map((item, index) => (
+              <div 
+                key={index}
+                className={`flex-1 min-h-px px-[15px] pt-5 pb-2.5 flex flex-col justify-start items-start 
+                  ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'} 
+                  transition-all duration-[800ms] ease-out hover:-translate-y-[5px] hover:duration-300`}
+                style={{
+                  transitionDelay: isVisible ? `${item.delay}ms` : '0ms'
+                }}
+              >
+                <div className="self-stretch flex flex-col justify-start items-center gap-[25.39px]">
+                  <div className="flex justify-start items-start">
+                    <div data-variant={item.variant} className={`${item.dimensions} relative`}>
+                      <div 
+                        className={`${item.imageDimensions} ${item.imagePosition} absolute bg-cover bg-no-repeat bg-center`}
+                        style={{
+                          backgroundImage: `url(${item.image})`
+                        }}
+                      ></div>
+                      {item.variant === "23" && (
+                        <div className="w-12 h-[37.72px] left-0 top-[6.86px] absolute"></div>
+                      )}
+                    </div>
                   </div>
-                  <h3 className="text-gray-800 text-base md:text-lg lg:text-base xl:text-lg font-extralight font-['Inter'] text-center leading-tight">
-                    {feature.title}
-                  </h3>
+                  <div className="text-center justify-center text-[#0c2c44] text-lg md:text-xl lg:text-2xl font-bold font-['Inter'] leading-relaxed">
+                    {item.title}
+                  </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

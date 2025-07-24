@@ -53,8 +53,8 @@ const Header = () => {
   const openWhatsApp = () => {
     console.log('Abrindo WhatsApp...'); // Debug
     try {
-      // Substitua pelo número de telefone da empresa (formato: 5511999999999)
-      const phoneNumber = "5518981608512"; // Exemplo: +55 11 99999-9999
+      // Número de telefone da empresa (formato: 5518981608512)
+      const phoneNumber = "5518981608512";
       const message = "Olá! Gostaria de contratar os serviços de detecção de vazamentos.";
       const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
       console.log('URL gerada:', whatsappUrl); // Debug
@@ -65,6 +65,16 @@ const Header = () => {
       // Fallback: tentar apenas o número
       window.open(`https://wa.me/5518981608512`, '_blank');
     }
+  };
+
+  // Função para abrir Instagram
+  const openInstagram = () => {
+    window.open('https://www.instagram.com/caetanocacavazamento/', '_blank');
+  };
+
+  // Função para abrir WhatsApp (ícone da header)
+  const openWhatsAppIcon = () => {
+    window.open('https://wa.me/5518981608512', '_blank');
   };
 
   return (
@@ -154,16 +164,15 @@ const Header = () => {
                   <Youtube className="w-5 h-5 cursor-pointer text-white transition-all duration-300 group-hover:text-red-400 group-hover:scale-110 group-hover:drop-shadow-lg" />
                   <div className="absolute inset-0 bg-red-500/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300 opacity-0 group-hover:opacity-100 blur-sm"></div>
                 </div>
-                <div className="group relative">
+                <div className="group relative" onClick={openInstagram}>
                   <Instagram className="w-5 h-5 cursor-pointer text-white transition-all duration-300 group-hover:text-pink-400 group-hover:scale-110 group-hover:drop-shadow-lg" />
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300 opacity-0 group-hover:opacity-100 blur-sm"></div>
                 </div>
-                <div className="group relative">
+                <div className="group relative" onClick={openWhatsAppIcon}>
                   <img 
                     src={Whatsapp} 
                     alt="whatsapp" 
                     className='w-15 h-8 cursor-pointer transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-lg filter group-hover:brightness-110' 
-                    onClick={openWhatsApp}
                   />
                   <div className="absolute inset-0 bg-green-500/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300 opacity-0 group-hover:opacity-100 blur-sm"></div>
                 </div>
@@ -215,16 +224,15 @@ const Header = () => {
                     <Youtube className="w-7 h-7 cursor-pointer text-white transition-all duration-300 group-hover:text-red-400 group-hover:scale-110 group-hover:drop-shadow-lg" />
                     <div className="absolute inset-0 bg-red-500/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300 opacity-0 group-hover:opacity-100 blur-sm"></div>
                   </div>
-                  <div className="group relative">
+                  <div className="group relative" onClick={openInstagram}>
                     <Instagram className="w-7 h-7 cursor-pointer text-white transition-all duration-300 group-hover:text-pink-400 group-hover:scale-110 group-hover:drop-shadow-lg" />
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300 opacity-0 group-hover:opacity-100 blur-sm"></div>
                   </div>
-                  <div className="group relative">
+                  <div className="group relative" onClick={openWhatsAppIcon}>
                     <img 
                       src={Whatsapp} 
                       alt="whatsapp" 
                       className='w-16 h-9 cursor-pointer transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-lg filter group-hover:brightness-110' 
-                      onClick={openWhatsApp}
                     />
                     <div className="absolute inset-0 bg-green-500/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300 opacity-0 group-hover:opacity-100 blur-sm"></div>
                   </div>

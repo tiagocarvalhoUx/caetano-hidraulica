@@ -9,5 +9,5 @@ export const NAVIGATION_ITEMS = [
 export const SOCIAL_LINKS = [
   { id: 'youtube', platform: 'youtube', url: 'https://youtube.com' },
   { id: 'instagram', platform: 'instagram', url: 'https://instagram.com' },
-  { id: 'whatsapp', platform: 'whatsapp', url: 'https://wa.me/5511999999999' }
+  { id: 'whatsapp', platform: 'whatsapp', url: 'https://wa.me/5518 981608512' }
 ];
