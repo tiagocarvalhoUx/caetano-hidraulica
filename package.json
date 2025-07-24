@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "next dev",
     "build": " next build",
     "lint": "next eslint .",
     "preview": "vite preview",
     "vercel-build": "npm run build",
-    "vercel-install": "npm install"
+    "vercel-install": "npm install",
+    "start": "next start"
   },
   "dependencies": {
     "lucide-react": "^0.525.0",

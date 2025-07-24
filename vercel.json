@@ -1,4 +1,4 @@
  { "rewrites": [{ "source": "/(.*)", "destination": "/" }], "buildCommand": "npm run vercel-build",
-  "installCommand": "npm run vercel-install" }
+  "installCommand": "npm run vercel-install", "framework": "nextjs","outputDirectory": ".next" }
 
  
