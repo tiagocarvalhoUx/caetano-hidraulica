@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm install --legacy-peer-deps && next build",
+    "build": " next build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "vercel-build": "npm run vercel-install && npm run build"
+    "vercel-build": "npm run vercel-install"
   },
   "dependencies": {
     "lucide-react": "^0.525.0",
