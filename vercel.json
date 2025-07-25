@@ -1,18 +1,14 @@
 {
   "rewrites": [{ "source": "/(.*)", "destination": "/" }],
   "buildCommand": "npm run vercel-build",
-  "installCommand": "npm run vercel-install",
+  
   "framework": "vite",
-    "outputDirectory": "dist",
+  "outputDirectory": ".vite",
 
-  
-  "functions": {
-    "app/api/*.jsx": {
-      "runtime": "nodejs18.x"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
     }
-  
+  ]
 }
-}
-
-  
-
