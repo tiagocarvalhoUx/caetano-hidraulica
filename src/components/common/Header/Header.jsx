@@ -3,7 +3,7 @@ import  { useState, useEffect } from 'react';
 import { Youtube, Instagram, X, ArrowUp } from 'lucide-react';
 import Logo from "../../../assets/images/Logos/caetano-logo.png";
 import Whatsapp from "../../../assets/images/Banner/icon-whats.png";
-import Banner from "../../../assets/images/Banner/banner.png"
+import Banner from "../../../assets/images/Banner/Banner.png"
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
