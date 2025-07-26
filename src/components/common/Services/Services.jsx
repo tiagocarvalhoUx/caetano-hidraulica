@@ -146,11 +146,10 @@ const Services = () => {
                 {/* Descrição */}
                 <div className="self-stretch flex flex-col justify-start items-start">
                   <div className="self-stretch text-left text-[#090033] text-sm font-light font-['Inter'] leading-tight">
-                    Pinturas novas e repinturas de
+                    Instalações de itens práticos em
                     <br className="hidden xl:block"/>
-                    ambientes internos e externos, pintura
-                    <br className="hidden xl:block"/>
-                    de portões, entre outros serviços.
+                    de pias, registros, válvulas, entre outros.
+                    
                   </div>
                 </div>
                 

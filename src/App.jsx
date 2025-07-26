@@ -15,6 +15,13 @@ import Differences from "./components/common/Differences/Differences";
 function App() {
   return (
     <>
+      <main>
+    <title> Caetano Hidráulica</title>
+    <meta name="Keywords" content="HTML, TAILWIND, REACT,JAVASCRIPT " />
+    <meta name="Hidraulica Residencial Araçatuba-SP" content="hydraulics, Caetano, services" />
+    <meta name="author" content="Tiago Carvalho" />
+      </main>
+
       <Header />
       <HowItWorks />
       <ServicesNeed />
@@ -22,7 +29,6 @@ function App() {
       <Differences />
       <Action />
       <Services />
-      <Testimonials />
       <Trust />
       <Footer />
 

@@ -1,9 +1,9 @@
 {
   "rewrites": [{ "source": "/(.*)", "destination": "/" }],
-  "buildCommand": "npm run vercel-build",
+  
   
   "framework": "vite",
-  "outputDirectory": ".vite",
+  "outputDirectory": "vite",
 
   "builds": [
     {
