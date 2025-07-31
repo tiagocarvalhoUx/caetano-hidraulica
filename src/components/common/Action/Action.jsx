@@ -8,33 +8,33 @@ import Happy from '../../../assets/images/Banner/Felicidade Garantida.png';
 
 const Action = () => {
   return (
-    <section className="mt-[0.1rem]">
-      <div className="w-full min-h-[400px] md:min-h-[500px] xl:min-h-[619px] py-5 bg-gradient-to-br from-[#5db0ce] to-[#0e3e61] flex flex-col justify-start items-center px-4">
+    <section className="mt-[0.07rem]">
+      <div className="w-full min-h-[280px] md:min-h-[350px] xl:min-h-[433px] py-[14px] bg-gradient-to-br from-[#5db0ce] to-[#0e3e61] flex flex-col justify-start items-center px-3">
         
         {/* Container principal */}
-        <div className="w-full max-w-[320px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] relative">
+        <div className="w-full max-w-[224px] sm:max-w-[378px] md:max-w-[504px] lg:max-w-[672px] xl:max-w-[819px] relative">
           
           {/* Título */}
-          <div className="w-full pb-2 flex flex-col justify-start items-center mb-8 md:mb-12">
-            <div className="text-center text-white text-xl sm:text-2xl md:text-3xl xl:text-4xl font-bold font-['Inter'] leading-tight md:leading-10 px-4">
+          <div className="w-full pb-[6px] flex flex-col justify-start items-center mb-[22px] md:mb-[34px]">
+            <div className="text-center text-white text-lg sm:text-xl md:text-2xl xl:text-3xl font-bold font-['Inter'] leading-tight md:leading-8 px-3">
               É fácil como contar 1-2-3
             </div>
           </div>
           
           {/* Três colunas de passos */}
-          <div className="w-full flex flex-col md:flex-row justify-start items-start gap-6 md:gap-4 mb-8 md:mb-12">
+          <div className="w-full flex flex-col md:flex-row justify-start items-start gap-[17px] md:gap-3 mb-[22px] md:mb-[34px]">
             
             {/* Passo 1 */}
-            <div className="flex-1 px-4 flex flex-col justify-start items-center gap-4 md:gap-[19px]">
+            <div className="flex-1 px-3 flex flex-col justify-start items-center gap-3 md:gap-[13px]">
               <div className="flex justify-center items-start">
                 <img 
-                  className="w-16 h-16 md:w-[78px] md:h-[78px] relative" 
+                  className="w-[22.5px] h-[22.5px] md:w-[27.5px] md:h-[27.5px] relative" 
                   src={Number1} 
                   alt="Passo 1"
                 />
               </div>
               <div className="w-full flex flex-col justify-start items-center">
-                <div className="text-center text-white text-base md:text-lg font-normal font-['Inter'] leading-relaxed px-2">
+                <div className="text-center text-white text-sm md:text-base font-normal font-['Inter'] leading-relaxed px-[6px]">
                   Obtenha o preço e o tempo para o serviço<br className="hidden md:block" />
                   <span className="md:hidden"> </span>desejado.
                 </div>
@@ -42,16 +42,16 @@ const Action = () => {
             </div>
             
             {/* Passo 2 */}
-            <div className="flex-1 px-4 flex flex-col justify-start items-center gap-4 md:gap-[19px]">
+            <div className="flex-1 px-3 flex flex-col justify-start items-center gap-3 md:gap-[13px]">
               <div className="flex justify-center items-start">
                 <img 
-                  className="w-16 h-16 md:w-[78px] md:h-[78px] relative" 
+                  className="w-[22.5px] h-[22.5px] md:w-[27.5px] md:h-[27.5px] relative" 
                   src={Number2} 
                   alt="Passo 2"
                 />
               </div>
               <div className="w-full flex flex-col justify-start items-center">
-                <div className="text-center text-white text-base md:text-lg font-normal font-['Inter'] leading-relaxed px-2">
+                <div className="text-center text-white text-sm md:text-base font-normal font-['Inter'] leading-relaxed px-[6px]">
                   Agende o melhor dia e horário para realização<br className="hidden md:block" />
                   <span className="md:hidden"> </span>do serviço.
                 </div>
@@ -59,16 +59,16 @@ const Action = () => {
             </div>
             
             {/* Passo 3 */}
-            <div className="flex-1 px-4 flex flex-col justify-start items-center gap-4 md:gap-[19px]">
+            <div className="flex-1 px-3 flex flex-col justify-start items-center gap-3 md:gap-[13px]">
               <div className="flex justify-center items-start">
                 <img 
-                  className="w-16 h-16 md:w-[78px] md:h-[78px] relative" 
+                  className="w-[22.5px] h-[22.5px] md:w-[27.5px] md:h-[27.5px] relative" 
                   src={Number3} 
                   alt="Passo 3"
                 />
               </div>
               <div className="w-full flex flex-col justify-start items-center">
-                <div className="text-center text-white text-base md:text-lg font-normal font-['Inter'] leading-relaxed px-2">
+                <div className="text-center text-white text-sm md:text-base font-normal font-['Inter'] leading-relaxed px-[6px]">
                   Tenha a garantia de 3 meses para os serviços<br className="hidden md:block" />
                   <span className="md:hidden"> </span>realizados por nossa equipe.
                 </div>
@@ -77,13 +77,13 @@ const Action = () => {
           </div>
           
           {/* Seção de imagens */}
-          <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-6 lg:gap-0">
+          <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-[17px] lg:gap-0">
             
             {/* Imagem esquerda */}
-            <div className="w-full lg:w-[390px] px-4 flex flex-col justify-start items-center lg:items-start">
+            <div className="w-full lg:w-[273px] px-3 flex flex-col justify-start items-center lg:items-start">
               <div className="w-full flex justify-center items-start">
                 <img 
-                  className="w-full max-w-[300px] sm:max-w-[320px] lg:max-w-[360px] h-auto lg:h-[230px] relative object-cover rounded-lg lg:rounded-none" 
+                  className="w-full max-w-[105px] sm:max-w-[112px] lg:max-w-[126px] h-auto lg:h-[80.5px] relative object-cover rounded-lg lg:rounded-none" 
                   src={Logo2} 
                   alt="Serviço 1"
                 />
@@ -91,10 +91,10 @@ const Action = () => {
             </div>
             
             {/* Imagem direita */}
-            <div className="w-full lg:w-[780px] px-4 lg:pt-[60px] flex flex-col justify-start items-center lg:items-start">
+            <div className="w-full lg:w-[546px] px-3 lg:pt-[42px] flex flex-col justify-start items-center lg:items-start">
               <div className="w-full flex justify-center items-start">
                 <img 
-                  className="w-full max-w-[350px] sm:max-w-[400px] lg:max-w-[440px] h-auto lg:h-[115px] relative rounded-[15px] object-cover" 
+                  className="w-full max-w-[122.5px] sm:max-w-[140px] lg:max-w-[154px] h-auto lg:h-[40.5px] relative rounded-[5.5px] object-cover" 
                   src={Happy} 
                   alt="Serviço 2"
                 />

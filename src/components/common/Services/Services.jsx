@@ -21,25 +21,25 @@ const Services = () => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 xl:gap-0">
           
           {/* Serviço 1: Hidráulica */}
-          <div className="flex flex-col justify-start items-start min-h-[148px]">
-            <div className="flex flex-col sm:flex-row xl:flex-row justify-start sm:justify-center xl:justify-center items-start sm:items-center xl:items-center gap-4 xl:gap-[15px] xl:pl-[15.02px] xl:pr-[0.02px]">
+          <div className="flex flex-col justify-start items-start min-h-[104px]">
+            <div className="flex flex-col sm:flex-row xl:flex-row justify-start sm:justify-center xl:justify-center items-start sm:items-center xl:items-center gap-3 xl:gap-[11px] xl:pl-[11px] xl:pr-[0.01px]">
               
               {/* Imagem */}
-              <div className="w-full sm:w-[100px] xl:w-[99.98px] flex justify-center sm:justify-start xl:justify-start">
+              <div className="w-full sm:w-[70px] xl:w-[70px] flex justify-center sm:justify-start xl:justify-start">
                 <img 
-                  className="w-[100px] h-[100px] xl:w-[99.98px] xl:h-[99.98px] max-w-[390px] rounded-[10px]" 
+                  className="w-[70px] h-[70px] xl:w-[70px] xl:h-[70px] max-w-[273px] rounded-[7px]" 
                   src={Torneira} 
                   alt="Hidráulica" 
                 />
               </div>
               
               {/* Conteúdo */}
-              <div className="flex-1 w-full sm:w-auto xl:w-[259.98px] px-0 sm:px-4 xl:px-[15px] pt-0 sm:pt-4 xl:pt-[18px] pb-0 sm:pb-2.5 xl:pb-2.5 flex flex-col justify-start items-start gap-3 xl:gap-[9.40px]">
+              <div className="flex-1 w-full sm:w-auto xl:w-[182px] px-0 sm:px-3 xl:px-[11px] pt-0 sm:pt-3 xl:pt-[13px] pb-0 sm:pb-2 xl:pb-2 flex flex-col justify-start items-start gap-2 xl:gap-[7px]">
                 
                 {/* Título do serviço */}
                 <div className="self-stretch flex flex-col justify-start items-start">
                   <div className="py-px flex justify-start items-start">
-                    <div className="text-center text-[#0e3e61] text-xl xl:text-2xl font-bold font-['Inter'] leading-relaxed">
+                    <div className="text-center text-[#0e3e61] text-lg xl:text-xl font-bold font-['Inter'] leading-relaxed">
                       Hidráulica
                     </div>
                   </div>
@@ -47,16 +47,17 @@ const Services = () => {
                 
                 {/* Descrição */}
                 <div className="self-stretch flex flex-col justify-start items-start">
-                  <div className="self-stretch text-left text-[#090033] text-sm font-light font-['Inter'] leading-tight">Instalações de itens práticos em<br/>banheiros: torneiras, vazamentos de pias, registros, válvulas, entre outros.</div>
+                  <div className="self-stretch text-left text-[#090033] text-xs font-light font-['Inter'] leading-tight">
+                    Hidráulica, Residencial, Comercial e Predial.</div>
                 </div>
                 
                 {/* Link "Ver todos" */}
-                <div className="self-stretch pt-[1.60px] pb-0.5 flex flex-col justify-start items-start">
-                  <div className="h-[17px] flex justify-start items-center cursor-pointer hover:opacity-80 transition-opacity">
-                    <div className="text-[#0e3e61] text-sm font-bold font-['Inter'] leading-tight">Ver todos </div>
+                <div className="self-stretch pt-[1.1px] pb-0.5 flex flex-col justify-start items-start">
+                  <div className="h-[12px] flex justify-start items-center cursor-pointer hover:opacity-80 transition-opacity">
+                    <div className="text-[#0e3e61] text-xs font-bold font-['Inter'] leading-tight">Ver todos </div>
                     <div className="flex justify-start items-start ml-1">
-                      <div className="w-3 h-3.5 relative">
-                        <div className="w-[11.50px] h-[12.17px] absolute top-[1.41px] bg-[#0e3e61] transform rotate-45 border-r-2 border-t-2 border-[#0e3e61]"></div>
+                      <div className="w-2 h-2.5 relative">
+                        <div className="w-[8px] h-[8.5px] absolute top-[1px] bg-[#0e3e61] transform rotate-45 border-r-2 border-t-2 border-[#0e3e61]"></div>
                       </div>
                     </div>
                   </div>
@@ -67,25 +68,25 @@ const Services = () => {
           </div>
           
           {/* Serviço 2: Visita Técnica */}
-          <div className="flex flex-col justify-start items-start min-h-[148px]">
-            <div className="flex flex-col sm:flex-row xl:flex-row justify-start sm:justify-center xl:justify-center items-start sm:items-center xl:items-center gap-4 xl:gap-[15px] xl:pl-[15.02px] xl:pr-[0.02px]">
+          <div className="flex flex-col justify-start items-start min-h-[104px]">
+            <div className="flex flex-col sm:flex-row xl:flex-row justify-start sm:justify-center xl:justify-center items-start sm:items-center xl:items-center gap-3 xl:gap-[11px] xl:pl-[11px] xl:pr-[0.01px]">
               
               {/* Imagem */}
-              <div className="w-full sm:w-[100px] xl:w-[99.98px] flex justify-center sm:justify-start xl:justify-start">
+              <div className="w-full sm:w-[70px] xl:w-[70px] flex justify-center sm:justify-start xl:justify-start">
                 <img 
-                  className="w-[100px] h-[100px] xl:w-[99.98px] xl:h-[99.98px] max-w-[390px] rounded-[10px]" 
+                  className="w-[70px] h-[70px] xl:w-[70px] xl:h-[70px] max-w-[273px] rounded-[7px]" 
                   src={Chaves}
                   alt="Visita Técnica" 
                 />
               </div>
               
               {/* Conteúdo */}
-              <div className="flex-1 w-full sm:w-auto xl:w-[259.98px] px-0 sm:px-4 xl:px-[15px] pt-0 sm:pt-4 xl:pt-[18px] pb-0 sm:pb-2.5 xl:pb-2.5 flex flex-col justify-start items-start gap-3 xl:gap-[9.40px]">
+              <div className="flex-1 w-full sm:w-auto xl:w-[182px] px-0 sm:px-3 xl:px-[11px] pt-0 sm:pt-3 xl:pt-[13px] pb-0 sm:pb-2 xl:pb-2 flex flex-col justify-start items-start gap-2 xl:gap-[7px]">
                 
                 {/* Título do serviço */}
                 <div className="self-stretch flex flex-col justify-start items-start">
                   <div className="py-px flex justify-start items-start">
-                    <div className="text-center text-[#0e3e61] text-xl xl:text-2xl font-bold font-['Lato'] leading-relaxed">
+                    <div className="text-center text-[#0e3e61] text-lg xl:text-xl font-bold font-['Lato'] leading-relaxed">
                       Visita Técnica
                     </div>
                   </div>
@@ -93,22 +94,22 @@ const Services = () => {
                 
                 {/* Descrição */}
                 <div className="self-stretch flex flex-col justify-start items-start">
-                  <div className="self-stretch text-left text-[#090033] text-sm font-light font-['Inter'] leading-tight">
-                    Solicite a visita de um técnico
+                  <div className="self-stretch text-left text-[#090033] text-xs font-light font-['Inter'] leading-tight">
+                    Solicite a visita de um técnico <br />
                     <br className="hidden xl:block"/>
-                    especializado em seu imóvel para fazer
+                    especializado em seu imóvel para fazer o <br />
                     <br className="hidden xl:block"/>
-                    o levantamento do serviço.
+                    levantamento do serviço.
                   </div>
                 </div>
                 
                 {/* Link "Ver todos" */}
-                <div className="self-stretch pt-[1.60px] pb-0.5 flex flex-col justify-start items-start">
-                  <div className="h-[17px] flex justify-start items-center cursor-pointer hover:opacity-80 transition-opacity">
-                    <div className="text-[#0e3e61] text-sm font-bold font-['Inter'] leading-tight">Ver todos </div>
+                <div className="self-stretch pt-[1.1px] pb-0.5 flex flex-col justify-start items-start">
+                  <div className="h-[12px] flex justify-start items-center cursor-pointer hover:opacity-80 transition-opacity">
+                    <div className="text-[#0e3e61] text-xs font-bold font-['Inter'] leading-tight">Ver todos </div>
                     <div className="flex justify-start items-start ml-1">
-                      <div className="w-3 h-3.5 relative">
-                        <div className="w-[11.50px] h-[12.17px] absolute top-[1.41px] bg-[#0e3e61] transform rotate-45 border-r-2 border-t-2 border-[#0e3e61]"></div>
+                      <div className="w-2 h-2.5 relative">
+                        <div className="w-[8px] h-[8.5px] absolute top-[1px] bg-[#0e3e61] transform rotate-45 border-r-2 border-t-2 border-[#0e3e61]"></div>
                       </div>
                     </div>
                   </div>
@@ -119,25 +120,25 @@ const Services = () => {
           </div>
           
           {/* Serviço 3: Reparos */}
-          <div className="flex flex-col justify-start items-start min-h-[148px] md:col-span-2 xl:col-span-1">
-            <div className="flex flex-col sm:flex-row xl:flex-row justify-start sm:justify-center xl:justify-center items-start sm:items-center xl:items-center gap-4 xl:gap-[15px] xl:pl-[15.02px] xl:pr-[0.02px]">
+          <div className="flex flex-col justify-start items-start min-h-[104px] md:col-span-2 xl:col-span-1">
+            <div className="flex flex-col sm:flex-row xl:flex-row justify-start sm:justify-center xl:justify-center items-start sm:items-center xl:items-center gap-3 xl:gap-[11px] xl:pl-[11px] xl:pr-[0.01px]">
               
               {/* Imagem */}
-              <div className="w-full sm:w-[100px] xl:w-[99.98px] flex justify-center sm:justify-start xl:justify-start">
+              <div className="w-full sm:w-[70px] xl:w-[70px] flex justify-center sm:justify-start xl:justify-start">
                 <img 
-                  className="w-[100px] h-[100px] xl:w-[99.98px] xl:h-[99.98px] max-w-[390px] rounded-[10px]" 
+                  className="w-[70px] h-[70px] xl:w-[70px] xl:h-[70px] max-w-[273px] rounded-[7px]" 
                   src={House}
                   alt="Reparos" 
                 />
               </div>
               
               {/* Conteúdo */}
-              <div className="flex-1 w-full sm:w-auto xl:w-[259.98px] px-0 sm:px-4 xl:px-[15px] pt-0 sm:pt-4 xl:pt-[18px] pb-0 sm:pb-2.5 xl:pb-2.5 flex flex-col justify-start items-start gap-3 xl:gap-[9.40px]">
+              <div className="flex-1 w-full sm:w-auto xl:w-[182px] px-0 sm:px-3 xl:px-[11px] pt-0 sm:pt-3 xl:pt-[13px] pb-0 sm:pb-2 xl:pb-2 flex flex-col justify-start items-start gap-2 xl:gap-[7px]">
                 
                 {/* Título do serviço */}
                 <div className="self-stretch flex flex-col justify-start items-start">
                   <div className="py-px flex justify-start items-start">
-                    <div className="text-center text-[#0e3e61] text-xl xl:text-2xl font-bold font-['Inter'] leading-relaxed">
+                    <div className="text-center text-[#0e3e61] text-lg xl:text-xl font-bold font-['Inter'] leading-relaxed">
                       Reparos
                     </div>
                   </div>
@@ -145,21 +146,21 @@ const Services = () => {
                 
                 {/* Descrição */}
                 <div className="self-stretch flex flex-col justify-start items-start">
-                  <div className="self-stretch text-left text-[#090033] text-sm font-light font-['Inter'] leading-tight">
-                    Instalações de itens práticos em
+                  <div className="self-stretch text-left text-[#090033] text-xs font-light font-['Inter'] leading-tight">
+                    Instalações de itens práticos em <br />  
                     <br className="hidden xl:block"/>
-                    de pias, registros, válvulas, entre outros.
+                     pias, registros, válvulas, entre outros.
                     
                   </div>
                 </div>
                 
                 {/* Link "Ver todos" */}
-                <div className="self-stretch pt-[1.60px] pb-0.5 flex flex-col justify-start items-start">
-                  <div className="h-[17px] flex justify-start items-center cursor-pointer hover:opacity-80 transition-opacity">
-                    <div className="text-[#0e3e61] text-sm font-bold font-['Inter'] leading-tight">Ver todos </div>
+                <div className="self-stretch pt-[1.1px] pb-0.5 flex flex-col justify-start items-start">
+                  <div className="h-[12px] flex justify-start items-center cursor-pointer hover:opacity-80 transition-opacity">
+                    <div className="text-[#0e3e61] text-xs font-bold font-['Inter'] leading-tight">Ver todos </div>
                     <div className="flex justify-start items-start ml-1">
-                      <div className="w-3 h-3.5 relative">
-                        <div className="w-[11.50px] h-[12.17px] absolute top-[1.41px] bg-[#0e3e61] transform rotate-45 border-r-2 border-t-2 border-[#0e3e61]"></div>
+                      <div className="w-2 h-2.5 relative">
+                        <div className="w-[8px] h-[8.5px] absolute top-[1px] bg-[#0e3e61] transform rotate-45 border-r-2 border-t-2 border-[#0e3e61]"></div>
                       </div>
                     </div>
                   </div>

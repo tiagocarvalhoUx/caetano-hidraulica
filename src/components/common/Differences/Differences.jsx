@@ -28,18 +28,18 @@ const Differences = () => {
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-7 lg:gap-8 xl:gap-10 2xl:gap-12 justify-items-center">
             
             {/* Card 1 - Geofone Eletrônico */}
-            <div className="w-full max-w-[280px] sm:max-w-[300px] lg:max-w-[320px] xl:max-w-[280px] 2xl:max-w-[350px] flex flex-col justify-start items-center">
-              <div className="w-full h-auto min-h-[380px] sm:min-h-[400px] lg:min-h-[420px] 2xl:min-h-[480px] px-3 py-4 lg:px-4 lg:py-5 2xl:px-6 2xl:py-6 bg-white rounded shadow-[0px_1px_1px_0px_rgba(0,0,0,0.05)] border border-[#dddddd] flex flex-col justify-start items-center">
+            <div className="w-full max-w-[196px] sm:max-w-[210px] lg:max-w-[224px] xl:max-w-[196px] 2xl:max-w-[245px] flex flex-col justify-start items-center">
+              <div className="w-full h-auto min-h-[266px] sm:min-h-[280px] lg:min-h-[294px] 2xl:min-h-[336px] px-2 py-3 lg:px-3 lg:py-4 2xl:px-4 2xl:py-4 bg-white rounded shadow-[0px_1px_1px_0px_rgba(0,0,0,0.05)] border border-[#dddddd] flex flex-col justify-start items-center">
                 <img 
-                  className="w-[180px] h-[220px] sm:w-[200px] sm:h-[240px] lg:w-[220px] lg:h-[260px] xl:w-[200px] xl:h-[240px] 2xl:w-[260px] 2xl:h-[300px] object-cover mb-4 2xl:mb-6" 
+                  className="w-[126px] h-[154px] sm:w-[140px] sm:h-[168px] lg:w-[154px] lg:h-[182px] xl:w-[140px] xl:h-[168px] 2xl:w-[182px] 2xl:h-[210px] object-cover mb-3 2xl:mb-4" 
                   src={Geofone} 
                   alt="Geofone Eletrônico"
                 />
-                <div className="flex flex-col justify-start items-center text-center px-2">
-                  <div className="w-full mb-3 2xl:mb-4 text-center text-[#9f9f9f] text-sm lg:text-base 2xl:text-lg font-medium font-['Inter'] uppercase leading-[18px] 2xl:leading-[22px]">
+                <div className="flex flex-col justify-start items-center text-center px-1">
+                  <div className="w-full mb-2 2xl:mb-3 text-center text-[#9f9f9f] text-xs lg:text-sm 2xl:text-base font-medium font-['Inter'] uppercase leading-[13px] 2xl:leading-[15px]">
                     GEOFONE ELETRÔNICO
                   </div>
-                  <div className="w-full text-center text-[#9f9f9f] text-[11px] sm:text-xs lg:text-sm 2xl:text-base font-normal font-['Inter'] leading-[18px] 2xl:leading-[22px]">
+                  <div className="w-full text-center text-[#9f9f9f] text-[8px] sm:text-[9px] lg:text-[10px] 2xl:text-xs font-normal font-['Inter'] leading-[13px] 2xl:leading-[15px]">
                     Utilizado na localização de vazamentos ocultos e subterrâneos em tubulações de água pressurizadas.
                   </div>
                 </div>
@@ -47,18 +47,18 @@ const Differences = () => {
             </div>
 
             {/* Card 2 - PDTEC-512 */}
-            <div className="w-full max-w-[280px] sm:max-w-[300px] lg:max-w-[320px] xl:max-w-[280px] 2xl:max-w-[350px] flex flex-col justify-start items-center">
-              <div className="w-full h-auto min-h-[380px] sm:min-h-[400px] lg:min-h-[420px] 2xl:min-h-[480px] px-3 py-4 lg:px-4 lg:py-5 2xl:px-6 2xl:py-6 bg-white rounded shadow-[0px_1px_1px_0px_rgba(0,0,0,0.05)] border border-[#dddddd] flex flex-col justify-start items-center">
+            <div className="w-full max-w-[196px] sm:max-w-[210px] lg:max-w-[224px] xl:max-w-[196px] 2xl:max-w-[245px] flex flex-col justify-start items-center">
+              <div className="w-full h-auto min-h-[266px] sm:min-h-[280px] lg:min-h-[294px] 2xl:min-h-[336px] px-2 py-3 lg:px-3 lg:py-4 2xl:px-4 2xl:py-4 bg-white rounded shadow-[0px_1px_1px_0px_rgba(0,0,0,0.05)] border border-[#dddddd] flex flex-col justify-start items-center">
                 <img 
-                  className="w-[180px] h-[220px] sm:w-[200px] sm:h-[240px] lg:w-[220px] lg:h-[260px] xl:w-[200px] xl:h-[240px] 2xl:w-[260px] 2xl:h-[300px] object-cover mb-4 2xl:mb-6" 
+                  className="w-[126px] h-[154px] sm:w-[140px] sm:h-[168px] lg:w-[154px] lg:h-[182px] xl:w-[140px] xl:h-[168px] 2xl:w-[182px] 2xl:h-[210px] object-cover mb-3 2xl:mb-4" 
                   src={Pedtec} 
                   alt="PDTEC-512"
                 />
-                <div className="flex flex-col justify-start items-center text-center px-2">
-                  <div className="w-full mb-3 2xl:mb-4 text-center text-[#9f9f9f] text-sm lg:text-base 2xl:text-lg font-medium font-['Inter'] uppercase leading-[18px] 2xl:leading-[22px]">
+                <div className="flex flex-col justify-start items-center text-center px-1">
+                  <div className="w-full mb-2 2xl:mb-3 text-center text-[#9f9f9f] text-xs lg:text-sm 2xl:text-base font-medium font-['Inter'] uppercase leading-[13px] 2xl:leading-[15px]">
                     PDTEC-512
                   </div>
-                  <div className="w-full text-center text-[#9f9f9f] text-[11px] sm:text-xs lg:text-sm 2xl:text-base font-normal font-['Inter'] leading-[18px] 2xl:leading-[22px]">
+                  <div className="w-full text-center text-[#9f9f9f] text-[8px] sm:text-[9px] lg:text-[10px] 2xl:text-xs font-normal font-['Inter'] leading-[13px] 2xl:leading-[15px]">
                     É um equipamento eletrônico projetado para auxiliar na localização de redes hidráulicas em situações em que não há acesso à planta hidráulica, assim como ramais e by-pass.
                   </div>
                 </div>
@@ -66,18 +66,18 @@ const Differences = () => {
             </div>
 
             {/* Card 3 - Kit Estanque */}
-            <div className="w-full max-w-[280px] sm:max-w-[300px] lg:max-w-[320px] xl:max-w-[280px] 2xl:max-w-[350px] flex flex-col justify-start items-center">
-              <div className="w-full h-auto min-h-[380px] sm:min-h-[400px] lg:min-h-[420px] 2xl:min-h-[480px] px-3 py-4 lg:px-4 lg:py-5 2xl:px-6 2xl:py-6 bg-white rounded shadow-[0px_1px_1px_0px_rgba(0,0,0,0.05)] border border-[#dddddd] flex flex-col justify-start items-center">
+            <div className="w-full max-w-[196px] sm:max-w-[210px] lg:max-w-[224px] xl:max-w-[196px] 2xl:max-w-[245px] flex flex-col justify-start items-center">
+              <div className="w-full h-auto min-h-[266px] sm:min-h-[280px] lg:min-h-[294px] 2xl:min-h-[336px] px-2 py-3 lg:px-3 lg:py-4 2xl:px-4 2xl:py-4 bg-white rounded shadow-[0px_1px_1px_0px_rgba(0,0,0,0.05)] border border-[#dddddd] flex flex-col justify-start items-center">
                 <img 
-                  className="w-[180px] h-[220px] sm:w-[200px] sm:h-[240px] lg:w-[220px] lg:h-[260px] xl:w-[200px] xl:h-[240px] 2xl:w-[260px] 2xl:h-[300px] object-cover mb-4 2xl:mb-6" 
+                  className="w-[126px] h-[154px] sm:w-[140px] sm:h-[168px] lg:w-[154px] lg:h-[182px] xl:w-[140px] xl:h-[168px] 2xl:w-[182px] 2xl:h-[210px] object-cover mb-3 2xl:mb-4" 
                   src={Kit} 
                   alt="Kit Estanque"
                 />
-                <div className="flex flex-col justify-start items-center text-center px-2">
-                  <div className="w-full mb-3 2xl:mb-4 text-center text-[#9f9f9f] text-sm lg:text-base 2xl:text-lg font-medium font-['Inter'] uppercase leading-[18px] 2xl:leading-[22px]">
+                <div className="flex flex-col justify-start items-center text-center px-1">
+                  <div className="w-full mb-2 2xl:mb-3 text-center text-[#9f9f9f] text-xs lg:text-sm 2xl:text-base font-medium font-['Inter'] uppercase leading-[13px] 2xl:leading-[15px]">
                     KIT ESTANQUE
                   </div>
-                  <div className="w-full text-center text-[#9f9f9f] text-[11px] sm:text-xs lg:text-sm 2xl:text-base font-normal font-['Inter'] leading-[18px] 2xl:leading-[22px]">
+                  <div className="w-full text-center text-[#9f9f9f] text-[8px] sm:text-[9px] lg:text-[10px] 2xl:text-xs font-normal font-['Inter'] leading-[13px] 2xl:leading-[15px]">
                     Para esgoto e água pluvial é recomendado para redes não pressurizadas, como de água pluvial e esgoto.
                   </div>
                 </div>
@@ -85,18 +85,18 @@ const Differences = () => {
             </div>
 
             {/* Card 4 - Câmera Termográfica */}
-            <div className="w-full max-w-[280px] sm:max-w-[300px] lg:max-w-[320px] xl:max-w-[280px] 2xl:max-w-[350px] flex flex-col justify-start items-center">
-              <div className="w-full h-auto min-h-[380px] sm:min-h-[400px] lg:min-h-[420px] 2xl:min-h-[480px] px-3 py-4 lg:px-4 lg:py-5 2xl:px-6 2xl:py-6 bg-white rounded shadow-[0px_1px_1px_0px_rgba(0,0,0,0.05)] border border-[#dddddd] flex flex-col justify-start items-center">
+            <div className="w-full max-w-[196px] sm:max-w-[210px] lg:max-w-[224px] xl:max-w-[196px] 2xl:max-w-[245px] flex flex-col justify-start items-center">
+              <div className="w-full h-auto min-h-[266px] sm:min-h-[280px] lg:min-h-[294px] 2xl:min-h-[336px] px-2 py-3 lg:px-3 lg:py-4 2xl:px-4 2xl:py-4 bg-white rounded shadow-[0px_1px_1px_0px_rgba(0,0,0,0.05)] border border-[#dddddd] flex flex-col justify-start items-center">
                 <img 
-                  className="w-[180px] h-[210px] sm:w-[200px] sm:h-[230px] lg:w-[220px] lg:h-[250px] xl:w-[200px] xl:h-[230px] 2xl:w-[260px] 2xl:h-[290px] object-cover mb-4 2xl:mb-6" 
+                  className="w-[126px] h-[147px] sm:w-[140px] sm:h-[161px] lg:w-[154px] lg:h-[175px] xl:w-[140px] xl:h-[161px] 2xl:w-[182px] 2xl:h-[203px] object-cover mb-3 2xl:mb-4" 
                   src={Camera}
                   alt="Câmera Termográfica"
                 />
-                <div className="flex flex-col justify-start items-center text-center px-2">
-                  <div className="w-full mb-3 2xl:mb-4 text-center text-[#9f9f9f] text-sm lg:text-base 2xl:text-lg font-medium font-['Inter'] uppercase leading-[18px] 2xl:leading-[22px]">
+                <div className="flex flex-col justify-start items-center text-center px-1">
+                  <div className="w-full mb-2 2xl:mb-3 text-center text-[#9f9f9f] text-xs lg:text-sm 2xl:text-base font-medium font-['Inter'] uppercase leading-[13px] 2xl:leading-[15px]">
                     CÂMERA TERMOGRÁFICA
                   </div>
-                  <div className="w-full text-center text-[#9f9f9f] text-[11px] sm:text-xs lg:text-sm 2xl:text-base font-normal font-['Inter'] leading-[18px] 2xl:leading-[22px]">
+                  <div className="w-full text-center text-[#9f9f9f] text-[8px] sm:text-[9px] lg:text-[10px] 2xl:text-xs font-normal font-['Inter'] leading-[13px] 2xl:leading-[15px]">
                     Ajuda a visualizar os pontos quentes e frios que podem indicar falhas elétricas, falhas mecânicas ou vazamentos de ar e de água.
                   </div>
                 </div>

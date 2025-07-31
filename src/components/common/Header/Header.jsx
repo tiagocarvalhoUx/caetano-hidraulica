@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { Youtube, Instagram, X, ArrowUp } from "lucide-react";
 import Logo from "../../../assets/images/Logos/caetano-logo.png";
 import Whatsapp from "../../../assets/images/Banner/icon-whats.png";
-import Banner from "../../../assets/images/Banner/banner.png";
+import Banner from "../../../assets/images/Banner/banner-phone.png";
+
 
 
 const Header = () => {
@@ -84,6 +85,8 @@ const Header = () => {
 
   return (
     <>
+
+
       <header className="bg-white shadow-sm">
         {/* Blue Header Section */}
         <div className="self-stretch w-full max-w-[1920px] mx-auto h-auto min-h-[80px] md:h-[153px] md:min-h-5 p-px bg-gradient-to-b from-[#0d3350] to-[#1d74b6] rounded outline outline-1 outline-offset-[-1px] outline-[#f3fcf9] inline-flex flex-col justify-start items-center relative">

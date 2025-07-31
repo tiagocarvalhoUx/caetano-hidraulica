@@ -20,36 +20,36 @@ const Trust = () => {
       title: "Identidade Checada",
       delay: 0,
       variant: "21",
-      dimensions: "w-[41.16px] h-12",
-      imageDimensions: "w-[41.14px] h-[41.14px]",
-      imagePosition: "left-[0.01px] top-[3.43px]"
+      dimensions: "w-[20.58px] h-6",
+      imageDimensions: "w-[20.57px] h-[20.57px]",
+      imagePosition: "left-[0.005px] top-[1.715px]"
     },
     {
       image: Component2,
       title: "Histórico Verificado",
       delay: 200,
       variant: "22",
-      dimensions: "w-[41.16px] h-12",
-      imageDimensions: "w-[41.14px] h-12",
-      imagePosition: "left-[0.01px] top-0"
+      dimensions: "w-[20.58px] h-6",
+      imageDimensions: "w-[20.57px] h-6",
+      imagePosition: "left-[0.005px] top-0"
     },
     {
       image: Component3,
       title: "Problemas Resolvidos",
       delay: 400,
       variant: "23",
-      dimensions: "w-12 h-12",
-      imageDimensions: "w-[46.29px] h-[41.14px]",
-      imagePosition: "left-[1.71px] top-[3.43px]"
+      dimensions: "w-6 h-6",
+      imageDimensions: "w-[23.145px] h-[20.57px]",
+      imagePosition: "left-[0.855px] top-[1.715px]"
     },
     {
       image: Component4,
       title: "Profissionais Qualificados",
       delay: 600,
       variant: "24",
-      dimensions: "w-12 h-12",
-      imageDimensions: "w-[46.29px] h-[41.14px]",
-      imagePosition: "left-[1.71px] top-[3.43px]"
+      dimensions: "w-6 h-6",
+      imageDimensions: "w-[23.145px] h-[20.57px]",
+      imagePosition: "left-[0.855px] top-[1.715px]"
     }
   ];
 
@@ -101,7 +101,7 @@ const Trust = () => {
                         }}
                       ></div>
                       {item.variant === "23" && (
-                        <div className="w-12 h-[37.72px] left-0 top-[6.86px] absolute"></div>
+                        <div className="w-6 h-[18.86px] left-0 top-[3.43px] absolute"></div>
                       )}
                     </div>
                   </div>
