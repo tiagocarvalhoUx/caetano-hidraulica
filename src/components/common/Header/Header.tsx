@@ -102,40 +102,13 @@ const Header = () => {
           
           <div className="container mx-auto px-2 md:px-4 relative z-10">
             <div className="flex items-center justify-between py-2 md:py-4 md:justify-between relative">
-              {/* Mobile Hamburger Menu - Left Side */}
-              <div className="md:hidden flex items-center z-50">
-                <button
-                  className="text-white hover:text-blue-200 focus:outline-none relative z-50"
-                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                >
-                  {mobileMenuOpen ? (
-                    <X className="w-6 h-6" />
-                  ) : (
-                    <svg
-                      className="w-6 h-6"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
-                    </svg>
-                  )}
-                </button>
-              </div>
-
               {/* Logo - Hidden on Mobile, Normal on Desktop */}
               <div className="flex items-center md:space-x-8 md:flex-1">
                 <div className="hidden md:block">
                   <img
                     src={Logo}
                     alt="logo-caetano"
-                    className="md:mt-[-18px] md:ml-[-18px] md:w-full md:h-auto"
+                    className="md:mt-[-18px] md:ml-[-18px]  md:w-full md:h-[150px]" // aumente a altura se quiser
                   />
                 </div>
 
@@ -192,6 +165,34 @@ const Header = () => {
 
               {/* Mobile empty space for layout balance */}
               <div className="md:hidden flex-1"></div>
+
+              {/* Mobile Hamburger Menu - Right Side */}
+              <div className="md:hidden">
+                <button
+                  className="fixed top-4 right-4 z-50 bg-[#0d3350] rounded-full p-2 shadow-lg text-white hover:text-blue-200 focus:outline-none"
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  style={{ transition: 'background 0.2s' }}
+                >
+                  {mobileMenuOpen ? (
+                    <X className="w-6 h-6" />
+                  ) : (
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  )}
+                </button>
+              </div>
 
               {/* Desktop Social Icons */}
               <div className="hidden md:flex items-center space-x-4 ml-[15px]">
