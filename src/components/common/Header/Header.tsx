@@ -50,7 +50,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white shadow-sm fixed top-0 left-0 w-full z-50">
+      <header className="bg-white shadow-sm">
         <div className="self-stretch w-full max-w-[1920px] mx-auto h-auto min-h-[80px] md:h-[153px] md:min-h-5 p-px bg-gradient-to-b from-[#0d3350] to-[#1d74b6] rounded outline outline-1 outline-offset-[-1px] outline-[#f3fcf9] inline-flex flex-col justify-start items-center relative">
           {/* Mobile Logo Background */}
           <div className="md:hidden absolute inset-0 flex items-center justify-center overflow-hidden">
@@ -123,33 +123,7 @@ const Header = () => {
               </div>
               {/* Mobile empty space for layout balance */}
               <div className="md:hidden flex-1"></div>
-              {/* Mobile Hamburger Menu */}
-              <div className="md:hidden">
-                <button
-                  className="fixed top-4 right-4 z-50 bg-[#0d3350] rounded-full p-2 shadow-lg text-white hover:text-blue-200 focus:outline-none"
-                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                  style={{ transition: 'background 0.2s' }}
-                >
-                  {mobileMenuOpen ? (
-                    <X className="w-6 h-6" />
-                  ) : (
-                    <svg
-                      className="w-6 h-6"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
-                    </svg>
-                  )}
-                </button>
-              </div>
+              {/* REMOVA O BOTÃO HAMBURGER DAQUI */}
               {/* Desktop Social Icons */}
               <div className="hidden md:flex items-center space-x-4 ml-[15px]">
                 <div className="group relative">
@@ -291,6 +265,33 @@ const Header = () => {
           </button>
         </div>
       )}
+      {/* Hamburger fixo no topo para mobile */}
+      <div className="md:hidden">
+        <button
+          className="fixed top-4 right-4 z-[100] bg-[#0d3350] rounded-full p-2 shadow-lg text-white hover:text-blue-200 focus:outline-none"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          style={{ transition: 'background 0.2s' }}
+        >
+          {mobileMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          )}
+        </button>
+      </div>
     </>
   );
 };
