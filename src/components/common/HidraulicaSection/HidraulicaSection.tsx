@@ -1,5 +1,3 @@
-import React from 'react';
-import { ChevronRight, CheckCircle2, Users, Zap } from 'lucide-react';
 import tecnicoImg from '../../../assets/images/Fotos/tecnico02.png';
 
 const HidraulicaSection = () => {
@@ -90,7 +88,9 @@ const HidraulicaSection = () => {
                 {/* Icon */}
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center w-12 h-12 rounded-full bg-cyan-500/20 border border-cyan-500/30">
-                    <Users className="w-6 h-6 text-cyan-400" strokeWidth={2} />
+                    <svg className="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M19 12a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
                   </div>
                 </div>
 
@@ -107,12 +107,16 @@ const HidraulicaSection = () => {
             {/* Additional Features */}
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-lg border border-slate-700/50 hover:border-cyan-500/30 transition-colors duration-300">
-                <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" strokeWidth={2} />
+                <svg className="w-5 h-5 text-cyan-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span className="text-sm text-slate-300 font-medium">Atendimento Rápido</span>
               </div>
 
               <div className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-lg border border-slate-700/50 hover:border-cyan-500/30 transition-colors duration-300">
-                <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" strokeWidth={2} />
+                <svg className="w-5 h-5 text-cyan-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span className="text-sm text-slate-300 font-medium">Garantia 100%</span>
               </div>
             </div>
