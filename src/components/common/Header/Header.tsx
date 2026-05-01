@@ -215,12 +215,21 @@ const Header = () => {
             </div>
           )}
         </div>
-        {/* Banner */}
-        <img
-          className="self-stretch h-auto md:h-[300px] sm:h-[250px] shadow-md object-cover w-full"
-          alt="banner-caetano-hidraulica"
-          src={Banner}
-        />
+        {/* Banner com visibilidade otimizada para mobile */}
+        <div className="relative w-full overflow-hidden">
+          <img
+            className="self-stretch h-[280px] sm:h-[250px] md:h-[300px] lg:h-[350px] w-full object-cover shadow-md hover:shadow-lg transition-shadow duration-300 group"
+            alt="banner-caetano-hidraulica"
+            src={Banner}
+            style={{
+              objectPosition: "center 30%"
+            }}
+          />
+          {/* Overlay gradiente para melhor contraste e legibilidade */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0d3350]/40 via-transparent to-transparent opacity-40 pointer-events-none"></div>
+          {/* Efeito de brilho sutil ao hover */}
+          <div className="absolute inset-0 bg-white opacity-0 hover:opacity-5 transition-opacity duration-300 pointer-events-none"></div>
+        </div>
       </header>
       {/* Overlay para fechar o menu quando clicar fora */}
       {mobileMenuOpen && (
