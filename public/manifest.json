@@ -10,9 +10,9 @@
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "/favicon02.jpeg",
+      "src": "/favicon04.png",
       "sizes": "192x192",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any"
     },
     {
@@ -51,9 +51,9 @@
       "url": "/?section=contact",
       "icons": [
         {
-          "src": "/favicon02.jpeg",
+          "src": "/favicon04.png",
           "sizes": "192x192",
-          "type": "image/jpeg"
+          "type": "image/png"
         }
       ]
     }
