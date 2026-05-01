@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronRight, CheckCircle2, Users, Zap } from 'lucide-react';
+import tecnicoImg from '../../../assets/images/Fotos/tecnico.png';
 
 const HidraulicaSection = () => {
   const handleCTA = () => {
@@ -23,7 +24,7 @@ const HidraulicaSection = () => {
             {/* Image Container with Border */}
             <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl border-2 border-white/10">
               <img
-                src="/src/assets/images/Fotos/tecnico.png"
+                src={tecnicoImg}
                 alt="Profissional de Hidráulica"
                 className="w-full h-auto object-cover"
               />
