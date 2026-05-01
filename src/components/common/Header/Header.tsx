@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-white">
-        <div className="self-stretch w-full max-w-[1920px] mx-auto h-auto min-h-[70px] md:h-[100px] p-px bg-gradient-to-b from-[#0d3350] to-[#1d74b6] rounded-b-lg outline outline-1 outline-offset-[-1px] outline-[#f3fcf9] inline-flex flex-col justify-center items-center relative overflow-hidden">
+        <div className="self-stretch w-full max-w-[1920px] mx-auto h-auto min-h-[100px] sm:min-h-[90px] md:h-[100px] p-px bg-gradient-to-b from-[#0d3350] to-[#1d74b6] rounded-b-lg outline outline-1 outline-offset-[-1px] outline-[#f3fcf9] inline-flex flex-col justify-center items-center relative overflow-visible">
           {/* Mobile Logo Background */}
           <div className="md:hidden absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
             <img
