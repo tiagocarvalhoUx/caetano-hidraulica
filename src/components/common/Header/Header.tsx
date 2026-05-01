@@ -4,6 +4,7 @@ import { Youtube, Instagram, X, ArrowUp } from "lucide-react";
 import Logo from "../../../assets/images/Logos/caetano-logo.png";
 import Whatsapp from "../../../assets/images/Banner/icon-whats.png";
 import Banner from "../../../assets/images/Banner/banner-phone.png";
+import BannerDesktop from "../../../assets/images/Banner/Banner-desktop.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -215,20 +216,16 @@ const Header = () => {
             </div>
           )}
         </div>
-        {/* Banner com visibilidade otimizada para mobile */}
-        <div className="relative w-full overflow-hidden">
-          <img
-            className="self-stretch h-[280px] sm:h-[250px] md:h-[300px] lg:h-[350px] w-full object-cover shadow-md hover:shadow-lg transition-shadow duration-300 group"
-            alt="banner-caetano-hidraulica"
-            src={Banner}
-            style={{
-              objectPosition: "center 30%"
-            }}
-          />
-          {/* Overlay gradiente para melhor contraste e legibilidade */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0d3350]/40 via-transparent to-transparent opacity-40 pointer-events-none"></div>
-          {/* Efeito de brilho sutil ao hover */}
-          <div className="absolute inset-0 bg-white opacity-0 hover:opacity-5 transition-opacity duration-300 pointer-events-none"></div>
+        {/* Banner */}
+        <div className="w-full bg-[#f7fbfd] shadow-md">
+          <picture>
+            <source media="(min-width: 768px)" srcSet={BannerDesktop} />
+            <img
+              className="block w-full h-auto object-contain"
+              alt="Caetano Hidráulica: especialista em vazamentos e profissionais treinados"
+              src={Banner}
+            />
+          </picture>
         </div>
       </header>
       {/* Overlay para fechar o menu quando clicar fora */}
