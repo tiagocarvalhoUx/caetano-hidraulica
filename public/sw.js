@@ -1,9 +1,9 @@
-const CACHE_NAME = 'caetano-hidraulica-v1';
+const CACHE_NAME = 'caetano-hidraulica-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/src/assets/images/Logos/favicon-hidraulica.png',
+  '/favicon02.jpeg',
   '/src/assets/images/Logos/caetano-logo.png',
   '/logo-aba.png'
 ];

@@ -10,9 +10,9 @@
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "/src/assets/images/Logos/favicon-hidraulica.png",
+      "src": "/favicon02.jpeg",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/jpeg",
       "purpose": "any"
     },
     {
@@ -51,8 +51,9 @@
       "url": "/?section=contact",
       "icons": [
         {
-          "src": "/src/assets/images/Logos/favicon-hidraulica.png",
-          "sizes": "192x192"
+          "src": "/favicon02.jpeg",
+          "sizes": "192x192",
+          "type": "image/jpeg"
         }
       ]
     }
