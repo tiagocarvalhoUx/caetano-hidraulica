@@ -50,29 +50,29 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white shadow-sm">
-        <div className="self-stretch w-full max-w-[1920px] mx-auto h-auto min-h-[80px] md:h-[153px] md:min-h-5 p-px bg-gradient-to-b from-[#0d3350] to-[#1d74b6] rounded outline outline-1 outline-offset-[-1px] outline-[#f3fcf9] inline-flex flex-col justify-start items-center relative">
+      <header className="bg-white">
+        <div className="self-stretch w-full max-w-[1920px] mx-auto h-auto min-h-[70px] md:h-[100px] p-px bg-gradient-to-b from-[#0d3350] to-[#1d74b6] rounded-b-lg outline outline-1 outline-offset-[-1px] outline-[#f3fcf9] inline-flex flex-col justify-center items-center relative overflow-hidden">
           {/* Mobile Logo Background */}
-          <div className="md:hidden absolute inset-0 flex items-center justify-center overflow-hidden">
+          <div className="md:hidden absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
             <img
               src={Logo}
               alt="logo-caetano-background"
-              className="w-full h-full object-cover opacity-60"
+              className="w-full h-full object-cover opacity-40"
             />
           </div>
-          <div className="container mx-auto px-2 md:px-4 relative z-10">
-            <div className="flex items-center justify-between py-2 md:py-4 md:justify-between relative">
+          <div className="container mx-auto px-3 md:px-6 relative z-10 w-full">
+            <div className="flex items-center justify-between py-3 md:py-0 relative">
               {/* Logo - Hidden on Mobile, Normal on Desktop */}
-              <div className="flex items-center md:space-x-8 md:flex-1">
-                <div className="hidden md:block">
+              <div className="flex items-center md:space-x-12 md:flex-1">
+                <div className="hidden md:flex flex-shrink-0">
                   <img
                     src={Logo}
                     alt="logo-caetano"
-                    className="md:mt-[-18px] md:ml-[-18px]  md:w-full md:h-[150px]"
+                    className="h-[85px] w-auto object-contain"
                   />
                 </div>
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex space-x-8 text-sm font-semibold ml-8">
+                <nav className="hidden md:flex space-x-6 text-sm font-semibold ml-12">
                   <button
                     onClick={() => scrollToSection("home")}
                     className="relative group text-white font-[Inter] cursor-pointer transition-all duration-300 ease-out px-3 py-2 rounded-lg hover:bg-white/10 backdrop-blur-sm"
@@ -147,7 +147,7 @@ const Header = () => {
           </div>
           {/* Mobile Menu Overlay */}
           {mobileMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-[#0d3350] to-[#1d74b6] z-40 shadow-lg backdrop-blur-md border-t border-white/10">
+            <div id="mobile-navigation" className="md:hidden fixed top-[76px] left-4 right-4 bg-gradient-to-b from-[#0d3350] to-[#1d74b6] z-[90] rounded-2xl shadow-2xl backdrop-blur-md border border-white/10 overflow-hidden">
               <nav className="flex flex-col p-4 space-y-2">
                 <button
                   onClick={() => scrollToSection("home")}
@@ -217,7 +217,8 @@ const Header = () => {
         </div>
         {/* Banner */}
         <img
-          className="self-stretch h-[345px] shadow-[inset_0px_0px_3px_0px_rgba(50,50,50,0.10)] mt-[-5px] w-[100%]"
+          className="self-stretch h-auto md:h-[300px] sm:h-[250px] shadow-md object-cover w-full"
+          alt="banner-caetano-hidraulica"
           src={Banner}
         />
       </header>
@@ -270,6 +271,9 @@ const Header = () => {
         <button
           className="fixed top-4 right-4 z-[100] bg-[#0d3350] rounded-full p-2 shadow-lg text-white hover:text-blue-200 focus:outline-none"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-navigation"
+          aria-label={mobileMenuOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
           style={{ transition: 'background 0.2s' }}
         >
           {mobileMenuOpen ? (

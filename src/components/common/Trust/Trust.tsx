@@ -57,7 +57,7 @@ const Trust = () => {
     <section className="w-full">
 
       <div className="desktop-container w-full max-w-[1920px] mx-auto py-[41px] border-t border-b border-[#e7e7e7] flex flex-col justify-start items-center px-4 md:px-0">
-        <div className="w-full max-w-[1170px] flex flex-col justify-start items-start gap-[0px]">
+        <div className="w-full max-w-[1170px] flex flex-col justify-start items-center lg:items-start gap-[0px]">
           <div className={`self-stretch min-h-px px-[15px] pt-[19px] pb-2.5 flex flex-col justify-start items-start gap-2.5 
             ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'} 
             transition-all duration-[800ms] ease-out`}>
@@ -80,11 +80,11 @@ const Trust = () => {
             </div>
           </div>
             <br />
-          <div className="self-stretch flex flex-col lg:flex-row justify-start items-start gap-4 lg:gap-0">
+          <div className="self-stretch flex flex-col lg:flex-row justify-start items-center lg:items-start gap-5 lg:gap-0">
             {trustItems.map((item, index) => (
               <div 
                 key={index}
-                className={`flex-1 min-h-px px-[15px] pt-5 pb-2.5 flex flex-col justify-start items-start 
+                className={`w-full max-w-[320px] lg:max-w-none lg:flex-1 min-h-px px-[15px] pt-5 pb-2.5 flex flex-col justify-start items-center lg:items-start 
                   ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'} 
                   transition-all duration-[800ms] ease-out hover:-translate-y-[5px] hover:duration-300`}
                 style={{
