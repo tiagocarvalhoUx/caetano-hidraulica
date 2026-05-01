@@ -16,16 +16,22 @@
       "purpose": "any"
     },
     {
-      "src": "/src/assets/images/Logos/caetano-logo.png",
+      "src": "/favicon04.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "/logo-aba.png",
+      "src": "/favicon04.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon04.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "screenshots": [

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'caetano-hidraulica-v4';
+const CACHE_NAME = 'caetano-hidraulica-v5';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
