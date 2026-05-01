@@ -11,7 +11,7 @@ import Trust from "./components/common/Trust";
 import SessionNever from "./components/common/Session-Never/SessionNever";
 import Action from "./components/common/Action/Action";
 import Differences from "./components/common/Differences/Differences";
-import HidraulicaSection from "./components/common/HidraulicaSection";
+import HidraulicaSection from "./components/common/HidraulicaSection/HidraulicaSection";
 
 function App() {
   return (

@@ -9,16 +9,28 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
-// Registrar Service Worker para PWA
+// Registrar Service Worker para PWA (apenas em produção)
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').then(
-      (registration) => {
-        console.log('Service Worker registrado:', registration)
-      },
-      (error) => {
-        console.log('Erro ao registrar Service Worker:', error)
-      }
-    )
-  })
+  if (import.meta.env.PROD) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').then(
+        (registration) => {
+          console.log('Service Worker registrado:', registration)
+        },
+        (error) => {
+          console.log('Erro ao registrar Service Worker:', error)
+        }
+      )
+    })
+  } else {
+    // Em dev, desregistra qualquer SW existente para evitar cache antigo
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      registrations.forEach((registration) => registration.unregister())
+    })
+    if ('caches' in window) {
+      caches.keys().then((names) => {
+        names.forEach((name) => caches.delete(name))
+      })
+    }
+  }
 }
