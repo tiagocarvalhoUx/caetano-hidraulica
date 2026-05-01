@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, CheckCircle2, Users, Zap } from 'lucide-react';
+import { CheckCircle2, Users } from 'lucide-react';
 import tecnicoImg from '../../../assets/images/Fotos/tecnico.png';
 
 const HidraulicaSection = () => {
