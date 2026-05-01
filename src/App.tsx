@@ -11,7 +11,7 @@ import Trust from "./components/common/Trust";
 import SessionNever from "./components/common/Session-Never/SessionNever";
 import Action from "./components/common/Action/Action";
 import Differences from "./components/common/Differences/Differences";
-import SpecialistBanner from "./components/common/SpecialistBanner/SpecialistBanner";
+import HidraulicaSection from "./components/common/HidraulicaSection";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
       <ServicesNeed />
       <SessionNever />
       <Differences />
-      <SpecialistBanner />
+      <HidraulicaSection />
       <Action />
       <Services />
       <Trust />
