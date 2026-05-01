@@ -1,0 +1,60 @@
+{
+  "name": "Caetano Hidráulica",
+  "short_name": "Caetano",
+  "description": "Soluções em sistemas hidráulicos e treinamentos especializados.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1e3a8a",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/src/assets/images/Logos/favicon-hidraulica.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/assets/images/Logos/caetano-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo-aba.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/logo-aba.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/logo-aba.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Contato",
+      "short_name": "Contato",
+      "description": "Entre em contato conosco",
+      "url": "/?section=contact",
+      "icons": [
+        {
+          "src": "/src/assets/images/Logos/favicon-hidraulica.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
