@@ -28,6 +28,9 @@ function App() {
       <ServicesNeed />
       <SessionNever />
       <Differences />
+      <div style={{ padding: '40px', textAlign: 'center', background: '#000', color: '#0ff', fontSize: '24px' }}>
+        TEST: HidraulicaSection component position
+      </div>
       <HidraulicaSection />
       <Action />
       <Services />
