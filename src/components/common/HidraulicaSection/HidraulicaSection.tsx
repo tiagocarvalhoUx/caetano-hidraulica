@@ -3,9 +3,10 @@ import { ChevronRight, CheckCircle2, Users, Zap } from 'lucide-react';
 
 const HidraulicaSection = () => {
   const handleCTA = () => {
-    console.log('Botão de orçamento clicado!');
-    // Aqui você pode adicionar lógica para abrir um modal, redirecionar, etc
-    // Exemplo: window.location.href = '/orcamento'
+    const whatsappNumber = "+5518981608512";
+    const message = "Olá! Gostaria de solicitar um orçamento para soluções residenciais.";
+    const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, "_blank");
   };
 
   return (
