@@ -105,6 +105,16 @@ const Header = () => {
                     <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"></div>
                   </button>
                   <button
+                    onClick={() => scrollToSection("solucoes-residenciais")}
+                    className="relative group text-white font-[Inter] cursor-pointer transition-all duration-300 ease-out px-3 py-2 rounded-lg hover:bg-white/10 backdrop-blur-sm"
+                  >
+                    <span className="relative z-10 transition-colors duration-300 group-hover:text-blue-100">
+                      Soluções Residenciais
+                    </span>
+                    <div className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-cyan-300 to-blue-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-center rounded-full"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"></div>
+                  </button>
+                  <button
                     onClick={openWhatsApp}
                     className="relative group text-white font-[Inter] cursor-pointer transition-all duration-300 ease-out px-4 py-2 rounded-lg bg-gradient-to-r from-green-500/20 to-green-400/20 border border-green-400/30 hover:from-green-400/30 hover:to-green-300/30 hover:border-green-300/50 hover:shadow-lg hover:shadow-green-400/20 backdrop-blur-sm"
                   >
@@ -176,6 +186,15 @@ const Header = () => {
                     Diferenciais
                   </span>
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-gradient-to-b from-blue-300 to-white group-hover:h-6 transition-all duration-300 rounded-full"></div>
+                </button>
+                <button
+                  onClick={() => scrollToSection("solucoes-residenciais")}
+                  className="group relative text-white py-3 px-4 rounded-lg transition-all duration-300 text-left hover:bg-white/10 backdrop-blur-sm border-b border-blue-400/20 hover:border-blue-300/40"
+                >
+                  <span className="relative z-10 transition-colors duration-300 group-hover:text-blue-100">
+                    Soluções Residenciais
+                  </span>
+                  <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-gradient-to-b from-cyan-300 to-blue-400 group-hover:h-6 transition-all duration-300 rounded-full"></div>
                 </button>
                 <button
                   onClick={openWhatsApp}

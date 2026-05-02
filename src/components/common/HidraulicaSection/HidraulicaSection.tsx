@@ -9,7 +9,7 @@ const HidraulicaSection = () => {
   };
 
   return (
-    <div className="w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen flex items-center justify-center py-12 px-4">
+    <div id="solucoes-residenciais" className="w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen flex items-center justify-center py-12 px-4 scroll-mt-20">
       <div className="max-w-7xl w-full">
         {/* Main Container */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
