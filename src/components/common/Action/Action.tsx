@@ -21,56 +21,53 @@ const Action = () => {
             </div>
           </div>
           
-          {/* Três colunas de passos */}
-          <div className="w-full flex flex-col md:flex-row justify-start items-start gap-[17px] md:gap-3 mb-[22px] md:mb-[34px]">
-            
+          {/* Layout triangular no mobile (2+1), horizontal no desktop */}
+          <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-6 md:gap-3 mb-[22px] md:mb-[34px]">
+
             {/* Passo 1 */}
-            <div className="flex-1 px-3 flex flex-col justify-start items-center gap-3 md:gap-[13px]">
+            <div className="px-2 md:px-3 flex flex-col justify-start items-center gap-2 md:gap-[13px]">
               <div className="flex justify-center items-start">
-                <img 
-                  className="w-[22.5px] h-[22.5px] md:w-[27.5px] md:h-[27.5px] relative" 
-                  src={Number1} 
+                <img
+                  className="w-7 h-7 md:w-[27.5px] md:h-[27.5px] relative"
+                  src={Number1}
                   alt="Passo 1"
                 />
               </div>
               <div className="w-full flex flex-col justify-start items-center">
-                <div className="text-center text-white text-sm md:text-base font-normal font-['Inter'] leading-relaxed px-[6px]">
-                  Obtenha o preço e o tempo para o serviço<br className="hidden md:block" />
-                  <span className="md:hidden"> </span>desejado.
+                <div className="text-center text-white text-xs sm:text-sm md:text-base font-normal font-['Inter'] leading-snug md:leading-relaxed">
+                  Obtenha o preço e o tempo para o serviço desejado.
                 </div>
               </div>
             </div>
-            
+
             {/* Passo 2 */}
-            <div className="flex-1 px-3 flex flex-col justify-start items-center gap-3 md:gap-[13px]">
+            <div className="px-2 md:px-3 flex flex-col justify-start items-center gap-2 md:gap-[13px]">
               <div className="flex justify-center items-start">
-                <img 
-                  className="w-[22.5px] h-[22.5px] md:w-[27.5px] md:h-[27.5px] relative" 
-                  src={Number2} 
+                <img
+                  className="w-7 h-7 md:w-[27.5px] md:h-[27.5px] relative"
+                  src={Number2}
                   alt="Passo 2"
                 />
               </div>
               <div className="w-full flex flex-col justify-start items-center">
-                <div className="text-center text-white text-sm md:text-base font-normal font-['Inter'] leading-relaxed px-[6px]">
-                  Agende o melhor dia e horário para realização<br className="hidden md:block" />
-                  <span className="md:hidden"> </span>do serviço.
+                <div className="text-center text-white text-xs sm:text-sm md:text-base font-normal font-['Inter'] leading-snug md:leading-relaxed">
+                  Agende o melhor dia e horário para realização do serviço.
                 </div>
               </div>
             </div>
-            
-            {/* Passo 3 */}
-            <div className="flex-1 px-3 flex flex-col justify-start items-center gap-3 md:gap-[13px]">
+
+            {/* Passo 3 - centralizado embaixo no mobile (triangular) */}
+            <div className="col-span-2 md:col-span-1 max-w-[260px] mx-auto md:max-w-none px-2 md:px-3 flex flex-col justify-start items-center gap-2 md:gap-[13px]">
               <div className="flex justify-center items-start">
-                <img 
-                  className="w-[22.5px] h-[22.5px] md:w-[27.5px] md:h-[27.5px] relative" 
-                  src={Number3} 
+                <img
+                  className="w-7 h-7 md:w-[27.5px] md:h-[27.5px] relative"
+                  src={Number3}
                   alt="Passo 3"
                 />
               </div>
               <div className="w-full flex flex-col justify-start items-center">
-                <div className="text-center text-white text-sm md:text-base font-normal font-['Inter'] leading-relaxed px-[6px]">
-                  Tenha a garantia de 3 meses para os serviços<br className="hidden md:block" />
-                  <span className="md:hidden"> </span>realizados por nossa equipe.
+                <div className="text-center text-white text-xs sm:text-sm md:text-base font-normal font-['Inter'] leading-snug md:leading-relaxed">
+                  Tenha a garantia de 3 meses para os serviços realizados por nossa equipe.
                 </div>
               </div>
             </div>

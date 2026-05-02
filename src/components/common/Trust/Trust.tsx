@@ -80,21 +80,21 @@ const Trust = () => {
             </div>
           </div>
             <br />
-          <div className="self-stretch flex flex-col lg:flex-row justify-start items-center lg:items-start gap-5 lg:gap-0">
+          <div className="self-stretch grid grid-cols-2 lg:grid-cols-4 gap-x-3 gap-y-8 sm:gap-x-4 sm:gap-y-10 lg:gap-0 px-2 sm:px-4 lg:px-0">
             {trustItems.map((item, index) => (
-              <div 
+              <div
                 key={index}
-                className={`w-full max-w-[320px] lg:max-w-none lg:flex-1 min-h-px px-[15px] pt-5 pb-2.5 flex flex-col justify-start items-center lg:items-start 
-                  ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'} 
+                className={`w-full lg:flex-1 min-h-px px-2 sm:px-3 lg:px-[15px] py-4 sm:py-5 lg:pt-5 lg:pb-2.5 flex flex-col justify-start items-center lg:items-start
+                  ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'}
                   transition-all duration-[800ms] ease-out hover:-translate-y-[5px] hover:duration-300`}
                 style={{
                   transitionDelay: isVisible ? `${item.delay}ms` : '0ms'
                 }}
               >
-                <div className="self-stretch flex flex-col justify-start items-center gap-[25.39px]">
-                  <div className="flex justify-start items-start">
+                <div className="self-stretch flex flex-col justify-start items-center gap-4 sm:gap-5 lg:gap-[25.39px]">
+                  <div className="flex justify-center items-center w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#0e3e61]/5 lg:bg-transparent lg:w-auto lg:h-auto lg:rounded-none">
                     <div data-variant={item.variant} className={`${item.dimensions} relative`}>
-                      <div 
+                      <div
                         className={`${item.imageDimensions} ${item.imagePosition} absolute bg-cover bg-no-repeat bg-center`}
                         style={{
                           backgroundImage: `url(${item.image})`
@@ -105,7 +105,7 @@ const Trust = () => {
                       )}
                     </div>
                   </div>
-                  <div className="text-center justify-center text-[#0c2c44] text-lg md:text-xl lg:text-2xl font-bold font-['Inter'] leading-relaxed">
+                  <div className="text-center justify-center text-[#0c2c44] text-sm sm:text-base md:text-xl lg:text-2xl font-bold font-['Inter'] leading-tight sm:leading-snug lg:leading-relaxed px-1">
                     {item.title}
                   </div>
                 </div>
